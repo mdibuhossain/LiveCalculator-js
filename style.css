@@ -59,14 +59,14 @@ body{
     border: .1px solid #5353531f;
     outline: none;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
 .btn:hover{
-    transition: 0s;
+    transition: 0s ease-in-out;
     background: #1c282b;
 }
 .btn:active{
-    transition: 0s;
+    transition: 0.1s ease-in-out;
     background: #babd07;
 }
 .zeroBtn{
