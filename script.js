@@ -87,6 +87,8 @@ clearBtn.addEventListener('click', function () {
 })
 
 clearLastBtn.addEventListener('click', function () {
-    dispTwoTmp = '';
-    dispTwo.innerText = '';
+    if (dispTwo && dispTwoTmp) {
+        dispTwoTmp = '';
+        dispTwo.innerText = '';
+    }
 })

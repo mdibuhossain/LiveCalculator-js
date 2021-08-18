@@ -17,21 +17,24 @@ body{
 }
 .calculator{
     display: grid;
+    grid-template-rows: repeat(6, 1fr);
     grid-column: span 4;
     position: relative;
     overflow: hidden;
-    border: .5px solid #363636;
+    outline: none;
     border-radius: 15px;
     width: 300px;
+    height: 500px;
 }
 .calculator .display{
     grid-column: span 4;
     width: 100%;
-    height: 80px;
+    height: 90px;
     padding: 10px;
     font-size: 26px;
     background: #B6B6B6;
     position: relative;
+    overflow: hidden;
 }
 #display-1, #display-3{
     font-size: 18px;
@@ -40,7 +43,7 @@ body{
 #display-3{
     position: absolute;
     bottom: 0;
-    font-size: 12px;
+    font-size: 16px;
 }
 #display-1, #display-2{
     text-align: right;
@@ -50,16 +53,21 @@ body{
     place-items: center;
     padding: 10px;
     width: 100%;
-    /* height: 70px; */
     height: 100%;
     font-size: 21px;
-    border: .5px solid #b6b6b61c;
+    background: #27373B;
+    border: .1px solid #5353531f;
+    outline: none;
     cursor: pointer;
     transition: 0.2s;
 }
 .btn:hover{
     transition: 0s;
-    background: #b6b6b679;
+    background: #1c282b;
+}
+.btn:active{
+    transition: 0s;
+    background: #babd07;
 }
 .zeroBtn{
     grid-column: span 2;
